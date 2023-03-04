@@ -1,4 +1,4 @@
-package com.crud.demo.service.impl;
+package com.crud.demo.product.service.impl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import com.crud.demo.dao.ProductDao;
-import com.crud.demo.dao.ProductsDao;
-import com.crud.demo.feign.facade.ProductFacade;
-import com.crud.demo.service.ProductServiceIF;
+import com.crud.demo.product.dao.ProductDao;
+import com.crud.demo.product.dao.ProductsDao;
+import com.crud.demo.product.feign.facade.ProductFacade;
+import com.crud.demo.product.service.ProductServiceIF;
 
 @Service
 public class ProductServiceImpl implements ProductServiceIF {

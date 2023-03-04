@@ -1,4 +1,4 @@
-package com.crud.demo.dao;
+package com.crud.demo.product.dao;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package com.crud.demo.config;
+package com.crud.demo.product.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
-import com.crud.demo.feign.client.ProductIF;
+import com.crud.demo.product.feign.client.ProductIF;
 
 import feign.Feign;
 import feign.Logger.Level;
