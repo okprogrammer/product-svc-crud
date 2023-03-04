@@ -17,8 +17,8 @@ public class FeignClientConfig {
 
 	@Bean(name = "productIF")
 	public ProductIF productIF() {
-		return Feign.builder().encoder(new JacksonEncoder()).decoder(new JacksonDecoder()).logger(new Slf4jLogger())
-				.logLevel(Level.FULL).target(ProductIF.class, "https://dummyjson.com");
+		return Feign.builder().encoder(new JacksonEncoder()).decoder(new JacksonDecoder()).errorDecoder(null)
+				.logger(new Slf4jLogger()).logLevel(Level.FULL).target(ProductIF.class, "https://dummyjson.com");
 	}
 
 	@Bean(name = "restTemplate")
