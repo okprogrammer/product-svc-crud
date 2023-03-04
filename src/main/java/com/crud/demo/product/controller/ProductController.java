@@ -1,4 +1,4 @@
-package com.crud.demo.controller;
+package com.crud.demo.product.controller;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.crud.demo.dao.ProductDao;
-import com.crud.demo.dao.ProductsDao;
-import com.crud.demo.entity.Product;
-import com.crud.demo.service.ProductServiceIF;
+import com.crud.demo.product.dao.ProductDao;
+import com.crud.demo.product.dao.ProductsDao;
+import com.crud.demo.product.entity.Product;
+import com.crud.demo.product.service.ProductServiceIF;
 
 @RestController
 @RequestMapping("prodcut-svc")

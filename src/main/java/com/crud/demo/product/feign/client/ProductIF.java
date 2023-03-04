@@ -1,9 +1,9 @@
-package com.crud.demo.feign.client;
+package com.crud.demo.product.feign.client;
 
 import java.util.List;
 
-import com.crud.demo.dao.ProductDao;
-import com.crud.demo.dao.ProductsDao;
+import com.crud.demo.product.dao.ProductDao;
+import com.crud.demo.product.dao.ProductsDao;
 
 import feign.Headers;
 import feign.RequestLine;

@@ -1,8 +1,8 @@
-package com.crud.demo.dao;
+package com.crud.demo.product.dao;
 
 import java.util.List;
 
-import com.crud.demo.entity.Product;
+import com.crud.demo.product.entity.Product;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

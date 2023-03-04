@@ -1,4 +1,4 @@
-package com.crud.demo.entity;
+package com.crud.demo.product.entity;
 
 import java.util.List;
 

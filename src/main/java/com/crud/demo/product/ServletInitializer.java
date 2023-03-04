@@ -1,4 +1,4 @@
-package com.crud.demo;
+package com.crud.demo.product;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
