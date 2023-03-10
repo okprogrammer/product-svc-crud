@@ -1,5 +1,7 @@
 package com.crud.demo.product.config;
 
+import java.util.concurrent.TimeUnit;
+
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -24,12 +26,12 @@ public class FeignClientBeanConfig {
 	@Value("${productsvc.feign.options.readtimeoutmillis}")
 	private int productSvcReadTimeoutMillis;
 
-	@SuppressWarnings("deprecation")
 	@Bean(name = "productIF")
 	public ProductIF productIF() {
 		return Feign.builder().encoder(new JacksonEncoder()).decoder(new JacksonDecoder()).errorDecoder(null)
 				.logger(new Slf4jLogger()).retryer(new Retryer.Default()).logLevel(Level.FULL)
-				.options(new Request.Options(productSvcConnectTimeoutMillis, productSvcReadTimeoutMillis))
+				.options(new Request.Options(productSvcConnectTimeoutMillis, TimeUnit.MILLISECONDS,
+						productSvcReadTimeoutMillis, TimeUnit.MILLISECONDS, true))
 				.target(ProductIF.class, "https://dummyjson.com");
 	}
 
